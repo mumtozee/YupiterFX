@@ -1,0 +1,42 @@
+body{
+	background-color: white;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+}
+tr{
+    
+}
+td{
+    
+}
+input{
+    outline: none;
+}
+input[type = q]{
+    width: 449px;
+    height: 20px;
+    background: url(../thumbnails/search.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    border: 1px solid dodgerblue;
+    padding-left: 21px;
+    padding-right: 5px;
+    border-radius: 3px 0px 0px 3px;
+    font-weight: bold;
+}
+input[type = submit]{
+    margin-left: -5px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid  dodgerblue;
+    border-radius: 0px 3px 3px 0px;
+    background: url(../thumbnails/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color:  dodgerblue;
+}
+input[type = submit]:hover{
+    cursor: pointer;
+}

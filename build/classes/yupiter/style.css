@@ -1,0 +1,63 @@
+#statusbar
+{
+    -fx-background-color: #ff8e0e;
+}
+
+#toolbar
+{
+    -fx-background-color: #ff8e0e;
+}
+
+#toolbar Button
+{
+    -fx-background-color: #ff8e0e;
+}
+
+#toolbar Button:hover
+{
+    -fx-background-color: #ff7109;
+}
+
+#backbtn
+{
+    -fx-background-image: url('../../img/back.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-pref-width: 16;
+    -fx-pref-height: 25;
+}
+
+#forwardbtn
+{
+    -fx-background-image: url('../../img/forward.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 16;
+    -fx-pref-height: 25;
+}
+
+#refreshbtn
+{
+    -fx-background-image: url('../../img/refresh.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 16;
+    -fx-pref-height: 25;
+}
+
+#menubtn
+{
+    -fx-background-image: url('../../img/menu.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 16;
+    -fx-pref-height: 25;
+}
+
+#path
+{
+    -fx-background-color: white;
+    -fx-background-image: url('../../img/search.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+}
