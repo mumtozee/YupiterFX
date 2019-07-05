@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="200.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yupiter.FXMLDocumentController">
+   <bottom>
+      <HBox fx:id="statusbar" prefHeight="16.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ProgressBar fx:id="processor" prefWidth="200.0" />
+            <Label fx:id="lbl" text="about:blank" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <WebView fx:id="browser" minWidth="100.0" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <BorderPane fx:id="toolbar" minWidth="200.0" prefHeight="26.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <left>
+            <HBox prefHeight="25.0" prefWidth="73.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="backbtn" mnemonicParsing="false" onAction="#GoBack" prefHeight="25.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding></Button>
+                  <Button fx:id="forwardbtn" mnemonicParsing="false" onAction="#GoForward">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="refreshbtn" mnemonicParsing="false" onAction="#RefreshPage">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <HBox prefHeight="25.0" prefWidth="305.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="path" minWidth="100.0" onAction="#LoadWeb" prefHeight="25.0" prefWidth="1200.0">
+                     <padding>
+                        <Insets left="5.0" right="20.0" />
+                     </padding></TextField>
+               </children>
+            </HBox>
+         </center>
+         <right>
+            <HBox prefHeight="25.0" prefWidth="132.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ComboBox prefHeight="25.0" prefWidth="100.0" promptText="Google" style="-fx-background-color: white;">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Button fx:id="menubtn" mnemonicParsing="false" prefHeight="25.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </right>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </BorderPane>
+   </top>
+</BorderPane>
